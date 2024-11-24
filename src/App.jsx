@@ -58,7 +58,7 @@ function App() {
           <input className="w-3/4 text-center md:w-1/4 block m-auto p-2 hover:border-b-2 hover:border-black focus:outline-none focus:border-b-2  focus:border-black rounded-sm" type="text" placeholder='Find Pokemon' value={search} onChange={handleChange} />
         </div>
  <div className="max-w-screen-xl flex flex-wrap justify-center overflow-y-scroll m-2">
-            {Loading ? <img className='spinner' src="public/spinner1.gif" alt="public/spinne2.gif" /> : searchPokemon.map(e => {
+            {Loading ? <img className='spinner' src="spinner1.gif" alt="spinne2.gif" /> : searchPokemon.map(e => {
               return <Card key={e.name} name={e.name} img={e.image} ability={e.ability}
               height={e.height} weight={e.weight} exp={e.experence} aby={e.ability} cry={e.cries} type={e.type} speed={e.speed} attack={e.attack} />
             })}
