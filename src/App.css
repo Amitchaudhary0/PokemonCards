@@ -1,0 +1,36 @@
+.img-background {
+    border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+    transition: border-radius .3s linear;
+
+}
+
+.card:hover .img-background {
+    border-radius: 53% 53% 46% 54% / 0% 0% 100% 100%;
+    transition: border-radius .3s linear;
+
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: #FF3D00;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+
+    .card:hover{
+        transform: scale(1.02);
+        transition: transform .2s linear;
+        box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.225);
+    }
