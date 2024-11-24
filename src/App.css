@@ -34,3 +34,6 @@
         transition: transform .2s linear;
         box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.225);
     }
+.spinner{
+    mix-blend-mode: color-burn;
+}
